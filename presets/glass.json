@@ -1,0 +1,98 @@
+{
+  "_说明": "液态玻璃的默认参数，来自两条成片的反复磨合。改风格只改这里，或在时间轴段落的 style 里覆盖。",
+  "font": "SmileySans-Oblique.ttf",
+  "material": {
+    "tint": [
+      255,
+      255,
+      255
+    ],
+    "amount": 0.05,
+    "bezel": 16,
+    "refract": 22,
+    "blur": 2.4,
+    "sat": 1.22,
+    "bright": 1.02,
+    "shadow": 0.22,
+    "rim": 1.0,
+    "adapt": 1.0
+  },
+  "vibrancy": {
+    "threshold": 150,
+    "dark": [
+      22,
+      24,
+      32
+    ],
+    "light": [
+      255,
+      255,
+      255
+    ]
+  },
+  "reveal": {
+    "stagger": 0.022,
+    "duration": 0.26,
+    "rise": 10
+  },
+  "morph": {
+    "spring_w": [
+      1.7,
+      0.58
+    ],
+    "spring_h": [
+      2.6,
+      0.5
+    ],
+    "start": 0.56,
+    "out": 0.2
+  },
+  "capsule": {
+    "size": 44,
+    "pad": 34,
+    "height": 2.0
+  },
+  "card": {
+    "radius": 36,
+    "border": 6,
+    "spring": [
+      2.2,
+      0.7
+    ],
+    "from_scale": 0.9
+  },
+  "glass_text": {
+    "font": "SmileySans-Oblique.ttf",
+    "spring": [
+      2.3,
+      0.55
+    ],
+    "from_scale": 1.35,
+    "soft": 4.0,
+    "material": {
+      "refract": 30,
+      "rim": 1.4,
+      "shadow": 0.3
+    }
+  },
+  "chapter": {
+    "in": 0.25,
+    "out": 0.3,
+    "dim": 0.28,
+    "y": 0.42,
+    "size": 190
+  },
+  "subtitle": {
+    "font": "SmileySans-Oblique.ttf",
+    "size": 72,
+    "y": 0.672,
+    "color": [
+      255,
+      255,
+      255
+    ],
+    "shadow": 150,
+    "max_chars": 12
+  },
+  "grain": 0
+}

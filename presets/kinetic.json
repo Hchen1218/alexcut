@@ -1,0 +1,72 @@
+{
+  "_说明": "贴脸逐词字幕运镜的默认手感，来自 AI 剪辑教程定稿版。中文标题默认得意黑；想用优设标题黑等字体，自己下载后把路径写进 fonts.zh。改风格只改这里，或在时间轴的 style 里覆盖。",
+  "fonts": {
+    "big": "Anton-Regular.ttf",
+    "small": "Montserrat-VF.ttf#SemiBold",
+    "zh": "SmileySans-Oblique.ttf"
+  },
+  "colors": {
+    "white": [
+      246,
+      243,
+      236
+    ],
+    "accent": [
+      255,
+      128,
+      16
+    ]
+  },
+  "layout": {
+    "margin": 110,
+    "tuck": 26,
+    "gap": 22,
+    "min_small": 50,
+    "head_w": 470
+  },
+  "small": {
+    "fade": 0.067,
+    "rise": 9,
+    "rise_t": 0.14
+  },
+  "big": {
+    "from_scale": 1.16,
+    "settle": 0.09,
+    "dx": 8,
+    "dy": 16
+  },
+  "hit": {
+    "from_scale": 1.35,
+    "spring": [
+      3.0,
+      0.5
+    ],
+    "jitter": 7
+  },
+  "float": {
+    "x": 3.2,
+    "y": 4.0
+  },
+  "parallax": {
+    "small": 0.5,
+    "big": 0.8
+  },
+  "camera": {
+    "spring": [
+      4.6,
+      0.58
+    ],
+    "push": 0.028,
+    "nudge": 22
+  },
+  "whip": {
+    "threshold": 40,
+    "max_samples": 12
+  },
+  "word": {
+    "shadow": 95,
+    "glow": 70,
+    "soft": 0.35
+  },
+  "grain": 0
+}

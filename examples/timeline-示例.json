@@ -1,0 +1,309 @@
+{
+ "_说明": "alexcut 时间轴示例：开头原片 → 贴脸逐词字幕 → 玻璃卡片放真实录屏 → 章节转场。路径相对本文件。字段说明见 scripts/timeline.py。",
+ "canvas": {
+  "w": 1080,
+  "h": 1920,
+  "fps": 30
+ },
+ "sources": {
+  "aroll": {
+   "path": "素材/口播.mov",
+   "scale": 1.5
+  },
+  "screen": {
+   "path": "素材/操作录屏.mp4",
+   "fit": "native",
+   "scale": 2
+  }
+ },
+ "masks": {
+  "aroll": "work/masks"
+ },
+ "audio": "素材/口播.mov",
+ "segments": [
+  {
+   "t0": 0,
+   "t1": 2.62,
+   "type": "aroll",
+   "source": "aroll",
+   "flat": true
+  },
+  {
+   "t0": 2.62,
+   "t1": 7.12,
+   "type": "kinetic",
+   "source": "aroll",
+   "blocks": [
+    {
+     "t0": 2.26,
+     "land": 2.62,
+     "cam": [
+      548,
+      800,
+      1.14,
+      0.0
+     ]
+    },
+    {
+     "t0": 3.56,
+     "land": 3.65,
+     "cam": [
+      300,
+      800,
+      1.42,
+      0.0
+     ]
+    },
+    {
+     "t0": 4.37,
+     "land": 4.46,
+     "cam": [
+      700,
+      620,
+      1.3,
+      1.5
+     ]
+    },
+    {
+     "t0": 4.84,
+     "land": 4.93,
+     "cam": [
+      800,
+      900,
+      1.3,
+      0.0
+     ]
+    },
+    {
+     "t0": 5.93,
+     "land": 6.02,
+     "cam": [
+      300,
+      960,
+      1.25,
+      0.0
+     ]
+    }
+   ],
+   "start_cam": [
+    540,
+    960,
+    1.0,
+    0.0
+   ],
+   "words": [
+    {
+     "t": 2.67,
+     "text": "what",
+     "kind": "s",
+     "size": 58,
+     "side": "L",
+     "y": 520
+    },
+    {
+     "t": 3.16,
+     "text": "you're",
+     "kind": "s",
+     "size": 58,
+     "side": "R",
+     "y": 560
+    },
+    {
+     "t": 3.36,
+     "text": "seeing",
+     "kind": "s",
+     "size": 58,
+     "side": "R",
+     "y": 628,
+     "stag": 34
+    },
+    {
+     "t": 3.65,
+     "text": "these",
+     "kind": "s",
+     "size": 60,
+     "side": "L",
+     "y": 520
+    },
+    {
+     "t": 3.97,
+     "text": "VISUALS",
+     "kind": "b",
+     "size": 175,
+     "side": "L",
+     "y": 660
+    },
+    {
+     "t": 4.46,
+     "text": "MOTION",
+     "kind": "b",
+     "size": 200,
+     "color": "accent",
+     "side": "T",
+     "y": 360,
+     "stag": 540
+    },
+    {
+     "t": 4.93,
+     "text": "CAPTIONS",
+     "kind": "b",
+     "size": 160,
+     "side": "T",
+     "y": 330,
+     "stag": 540
+    },
+    {
+     "t": 5.42,
+     "text": "SOUND",
+     "kind": "b",
+     "size": 165,
+     "color": "accent",
+     "side": "R",
+     "y": 780,
+     "stag": 10,
+     "fx": "hit"
+    },
+    {
+     "t": 6.03,
+     "text": "all",
+     "kind": "s",
+     "size": 58,
+     "side": "L",
+     "y": 556,
+     "stag": 30
+    },
+    {
+     "t": 6.23,
+     "text": "made by",
+     "kind": "s",
+     "size": 58,
+     "side": "L",
+     "y": 628
+    },
+    {
+     "t": 6.44,
+     "text": "AI.",
+     "kind": "b",
+     "size": 260,
+     "color": "accent",
+     "side": "T",
+     "y": 420,
+     "stag": 540,
+     "fx": "hit"
+    }
+   ],
+   "behind": [
+    "VISUALS",
+    "CAPTIONS",
+    "SOUND",
+    "AI."
+   ],
+   "shakes": [
+    [
+     3.97,
+     10
+    ],
+    [
+     5.42,
+     18
+    ],
+    [
+     6.44,
+     16
+    ]
+   ],
+   "punches": [
+    [
+     5.42,
+     0.06
+    ],
+    [
+     6.44,
+     0.07
+    ]
+   ]
+  },
+  {
+   "t0": 7.12,
+   "t1": 12.0,
+   "type": "glass",
+   "base": {
+    "source": "aroll"
+   },
+   "items": [
+    {
+     "kind": "card",
+     "t": 7.2,
+     "dur": 4.7,
+     "x": 540,
+     "y": 740,
+     "w": 860,
+     "h": 840,
+     "source": "screen",
+     "src_start": 0,
+     "crop": [
+      0.18,
+      0.0,
+      0.66,
+      1.0
+     ]
+    },
+    {
+     "kind": "capsule",
+     "t": 7.6,
+     "dur": 4.2,
+     "x": 540,
+     "y": 1195,
+     "text": "先让它拆对标"
+    }
+   ]
+  },
+  {
+   "t0": 12.0,
+   "t1": 13.8,
+   "type": "chapter",
+   "source": "aroll",
+   "title": "节奏",
+   "sub": "第一件事"
+  }
+ ],
+ "subtitles": {
+  "items": [
+   {
+    "t0": 0.1,
+    "t1": 1.36,
+    "text": "我现在所有的视频"
+   },
+   {
+    "t0": 1.36,
+    "t1": 2.62,
+    "text": "都是交给 AI 剪的"
+   },
+   {
+    "t0": 7.12,
+    "t1": 12.0,
+    "text": "直接找一条对标视频发给 AI"
+   }
+  ]
+ },
+ "music": {
+  "pieces": [
+   {
+    "file": "素材/配乐/思考型.mp3",
+    "song_start": 8.03,
+    "t0": 0,
+    "t1": 13.8,
+    "fade_in": 0.2,
+    "fade_out": 1.0,
+    "gain": 0,
+    "lowpass": [
+     12.4,
+     13.6
+    ]
+   }
+  ],
+  "bus_db": -14,
+  "duck_db": -5,
+  "lufs": -14
+ }
+}
